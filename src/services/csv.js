@@ -1,5 +1,6 @@
-import { csv } from './d3';
+import { csv } from "d3";
+import { from } from "rxjs";
 
-const getCsvData  = (url) => {
-    return csv(url);
-}
+export const getCsvData = (url) => {
+  return from(csv(url));
+};
