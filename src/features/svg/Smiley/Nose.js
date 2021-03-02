@@ -1,7 +1,7 @@
 
 
 export const Nose = (props) => {
-    const { x, y } = props;
+    const { x, y ,color} = props;
     const x2 = x + 15;
     const y2 = y + 15;
     const x3 = x2 - 15;
@@ -14,7 +14,7 @@ export const Nose = (props) => {
           x2={x2}
           y1={y}
           y2={y2}
-          stroke="black"
+          stroke={color}
           strokeWidth={strWidth}
         />
         <line
@@ -22,7 +22,7 @@ export const Nose = (props) => {
           x2={x3}
           y1={y2}
           y2={y3}
-          stroke="black"
+          stroke={color}
           strokeWidth={strWidth}
         />
       </g>
