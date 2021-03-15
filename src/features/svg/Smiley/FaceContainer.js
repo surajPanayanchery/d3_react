@@ -11,10 +11,9 @@ export const FaceContainer = () => {
 
   useEffect(() => {
     getCsvData(url).subscribe((res) => {
-      console.log(res);
       setColor(res);
     });
-  }, [colors.length]);
+  }, []);
 
   return colors.map((value, index) => {
     return (

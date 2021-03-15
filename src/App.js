@@ -1,5 +1,6 @@
 import { BrowserRouter, Link, Route } from "react-router-dom";
 import "./App.css";
+import { MouseFollower } from "./features/mouse-follower/MouseFollower";
 import { FaceContainer } from "./features/svg/Smiley/FaceContainer";
 
 export const Category = () => (
@@ -25,6 +26,7 @@ function App() {
     <BrowserRouter>
       <Category></Category>
       <Route path="/smiley" component={FaceContainer} />
+      <Route path="/follower" component={MouseFollower} />
     </BrowserRouter>
   );
 }
